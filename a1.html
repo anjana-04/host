@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+          $("button").click(function(){
+            var div = $("div");
+            div.animate({height: '300px', opacity: '0.4'}, "slow");
+            div.animate({width: '300px', opacity: '0.8'}, "slow");
+            div.animate({height: '100px', opacity: '0.4'}, "slow");
+            div.animate({width: '100px', opacity: '0.8'}, "slow");
+            div.animate({
+    left: '250px',
+    height: '+=150px',
+    width: '+=150px'
+  });
+          });
+        });
+        </script> 
+    <title>Document</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="a1.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a2.html">sliding</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="a4.html">animation</a>
+                        </li>
+        
+                </ul>
+            </nav><br>
+        <button type="button">click me</button>
+    <div style="background:#bf2163;height:100px;width:100px;position:absolute;"></div>
+    
+</body>
+</html>

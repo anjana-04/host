@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#b1").click(function(){ $("#div1").fadeIn("slow")})
+       $("#b2").mouseleave(function(){$("#bc").fadeOut("slow")})
+        $("#b3").mouseenter(function(){$("#bd").fadeToggle("slow")})
+        
+    })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="a1.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a2.html">sliding</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="a4.html">animation</a>
+                        </li>
+        
+                </ul>
+            </nav>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <p id="bc" style="color: crimson">
+this text will fade out
+    </p>
+    <p id="bd" style="color:darkgreen">
+    this text will toggle
+            </p>
+            <table>
+                <tr>
+                    <td>
+                    <button id="b1">fadein</button>
+                    </td>
+                    <td>
+                        <button id="b2">fadeout</button>
+                        </td>
+                        <td>
+                            <button id="b3">toggle</button>
+                            </td>
+                </tr>
+            </table>
+</body>
+</html>

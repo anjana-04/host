@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+          $("#ff").click(function(){
+            $("#fp").slideToggle("slow");
+          });
+        });
+        </script>
+        <style> 
+        #fp, #ff {
+            
+          padding: 5px;
+          text-align: center;
+          background-color: #eecce9;
+          border: solid 1px #6d16a0;
+        }
+        
+        #fp {
+        
+          padding: 50px;
+          display: home;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="a1.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a2.html">sliding</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="a4.html">animation</a>
+                        </li>
+        
+                </ul>
+            </nav>
+    <div id="ff">click here</div>
+    <div id="fp"><table><tr>home</tr>
+        <tr></tr>
+    </table></div>
+</body>
+</html>
